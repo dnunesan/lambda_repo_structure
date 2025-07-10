@@ -134,7 +134,8 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Virtual Environments (Enhanced Coverage)
+# Standard venv environments
 .env
 .envrc
 .venv
@@ -143,6 +144,27 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Alternative virtual environment names
+virtualenv/
+.virtualenv/
+myenv/
+my_env/
+project_env/
+python_env/
+py_env/
+
+# Conda environments (if using conda instead of venv)
+.conda/
+conda-env/
+
+# Virtualenvwrapper environments
+.virtualenvs/
+
+# Common custom virtual environment directory names
+*venv*/
+*env*/
+.python-version
 
 # Spyder project settings
 .spyderproject
